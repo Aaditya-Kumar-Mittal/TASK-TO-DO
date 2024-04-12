@@ -1,0 +1,26 @@
+npm install express nodemon mongoose cors
+
+package.json all listed node.js files
+app.js is the main file where the server starts
+
+routes apis in Routes folder
+Register will be a controller 
+Main logic in controller
+
+Middleware controller se pehle execute hota hain
+
+models main MongoDB ke models banenge
+
+
+utils ke andar normal functions will be defined
+
+validationSchma main validation schemes defined hongi
+
+Your `Todo` schema looks good. It defines the structure of a todo item with fields for userId, description, completion status, and date. Here's a brief explanation of each field:
+
+- `userId`: This field stores the user ID of the user who owns the todo item. It's defined as a reference to the User model, ensuring referential integrity.
+- `desc`: This field stores the description or content of the todo item. It's defined as a string and is required.
+- `isCompleted`: This field stores the completion status of the todo item. It's defined as a boolean and defaults to `false`. This field is also required.
+- `date`: This field stores the date and time when the todo item was created. It's defined as a Date type and defaults to the current date and time when a new todo item is created.
+
+Overall, your schema definition adheres to good practices, such as defining required fields and setting default values where appropriate. It should work well for your todo application. Let me know if you have any further questions!
