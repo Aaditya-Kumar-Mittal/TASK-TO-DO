@@ -34,7 +34,7 @@ export const MarkTodo = async (req, res) => {
         );
 
         if (todo) {
-            return res.json(jsonGenerate(StatusCode.SUCCESS, "Task Status Successfully Updated! Continue Your Progress!", todo));
+            return res.json(jsonGenerate(StatusCode.SUCCESS, "Task Status Updated! Continue Your Progress!", todo));
         }
     } catch (error) {
         return res.json(
