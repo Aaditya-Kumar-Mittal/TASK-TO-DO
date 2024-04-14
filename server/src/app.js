@@ -14,7 +14,9 @@ mongoose.connect(DB_CONNECT)
 
 const PORT = 8000;
 
-app.use(cors());
+app.use(cors({
+    origin: ["http://localhost:3000", "https://task-manager.com"]
+}));
 // Middleware
 app.use(express.json()); // Parses body into JSON
 
